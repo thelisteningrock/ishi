@@ -15,9 +15,6 @@ def bonsai():
 def about():
 	return "this website is a try-out"
 
-@app.route('/bonsaiempire')
-def bonsaiempire():
-	return render_template(https://www.bonsaiempire.com/basics/bonsai-care)
 		
 @app.route('/contact')
 def contact_thing():
