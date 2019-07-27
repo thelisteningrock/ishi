@@ -13,7 +13,7 @@ def bonsai():
 
 @app.route('/about')
 def about_website():
-	return "None available as of now."
+	return "this website is a try-out"
 
 @app.route('/contact')
 def contact_thing():
