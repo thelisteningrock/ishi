@@ -11,14 +11,6 @@ def hello_world():
 def blog_thing():
 	return render_template('blog.html')
 
-@app.route('/squashed_orange')
-def so_thing():
-	return render_template('so.html')
-
-@app.route('/click-on-this')
-def annoy_thing():
-	return "Contact me at squashed-orange-2453@pages.plusgoogle.com"
-
 @app.route('/about')
 def about_thing():
 	return "Everything you could possibly want to know can be found by searching."
