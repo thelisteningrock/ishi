@@ -12,7 +12,7 @@ def bonsai():
 	return render_template('bonsai.html')
 
 @app.route('/about')
-def about_website():
+def about():
 	return "this website is a try-out"
 
 @app.route('/contact')
