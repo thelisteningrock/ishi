@@ -5,30 +5,22 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-	return render_template('index.html')
-	
-@app.route('/blog')
-def blog_thing():
-	return render_template('blog.html')
+        return render_template('main.html')
+
+@app.route('/ishi')
+def anish_related_things():
+	return "This program made in GitHub is related to Ishi, obviously"
 
 @app.route('/about')
-def about_thing():
-	return "Everything you could possibly want to know can be found by searching."
-	
+def about_website():
+	return "None available as of now."
 
 @app.route('/contact')
 def contact_thing():
-	return "I am impossible to contact, aside from emails, social media etc."
+	return "I am impossible to contact"
 
-@app.route('/play')
-def fun_thing():
-	return render_template('contact.html')
-
-def test_thing():
-	return "I am impossible to contact, aside from emails, forums, places I edit etc."
 if __name__ == '__main__':
  	app.debug = True
  	port = int(os.environ.get("PORT", 5000))
  	app.run(host='0.0.0.0', port=port)
-	
 
