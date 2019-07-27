@@ -7,9 +7,9 @@ app = Flask(__name__)
 def hello_world():
         return render_template('main.html')
 
-@app.route('/ishi')
-def anish_related_things():
-	return "This program made in GitHub is related to Ishi, obviously"
+@app.route('/bonsaicare')
+def bonsai():
+	return render_template('bonsai.html')
 
 @app.route('/about')
 def about_website():
