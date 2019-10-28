@@ -18,7 +18,7 @@ def about():
 		
 @app.route('/contact')
 def contact_thing():
-	return "I am impossible to contact"
+	return "random facts"
 
 if __name__ == '__main__':
  	app.debug = True
